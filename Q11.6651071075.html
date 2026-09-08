@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form và các điều khiển trên form</title>
+
+    <script>
+        function xuLyDongY() {
+            var maUser = document.getElementById("txtMaUser").value;
+            document.getElementById("divNhan").innerText = maUser;
+        }
+    </script>
+</head>
+<body>
+
+    <h2 align="center" style="color: #8B3a00;">Đăng nhập</h2>
+    <form id="frmDangNhap">
+        <table align="center" border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; border-color: #8B3a00; width: 300px;">
+            
+            <tr>
+                <td>Mã người dùng:</td>
+                <td>
+                    <input type="text" id="txtMaUser">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mật khẩu:</td>
+                <td>
+                    <input type="password" id="txtMatKhau">
+                </td>
+            </tr>
+
+            <tr bgcolor="#D8EEF8">
+                <td colspan="2" align="center">
+                    <input type="button" id="btnDongY" value="Đồng ý" onclick="xuLyDongY()">
+                </td>
+            </tr>
+
+            <tr bgcolor="#D8EEF8">
+                <td colspan="2" align="center" style="height: 25px;">
+                    <div id="divNhan" style="color: blue; font-weight: bold;"></div>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
